@@ -9,10 +9,11 @@
 
 class ScalarConverter
 {
+private:
+    ScalarConverter();  
+    ~ScalarConverter();
+    ScalarConverter(ScalarConverter &object);
+    ScalarConverter& operator=(ScalarConverter const &object);
 public:
-ScalarConverter();
-~ScalarConverter();
-ScalarConverter& operator=(ScalarConverter const &object);
-ScalarConverter(ScalarConverter &object);
-static void convert(const std::string input);
+    static void convert(const std::string input);
 };

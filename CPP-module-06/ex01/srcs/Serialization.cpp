@@ -10,9 +10,7 @@ Serialization::Serialization(const Serialization &other)
 Serialization &Serialization::operator=(const Serialization &other)
 {
     if (this != &other)
-    {
-        // Copy the data from the other object to this object
-    }
+        return *this;
     return *this;
 }
 Serialization::~Serialization()

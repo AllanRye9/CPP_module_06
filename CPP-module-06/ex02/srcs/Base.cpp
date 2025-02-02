@@ -23,7 +23,7 @@ void identify(Base* p)
     else if (dynamic_cast<C*>(p))
         std::cout << "Identity of C Class" << std::endl;
     else
-        std::cout << "Identity of Unknown" << std::endl;
+        std::cout << "Identity Unknown" << std::endl;
 }
 
 void identify(Base& p)

@@ -12,11 +12,12 @@ struct Data
 
 class Serialization
 {   
-    public:
-        Serialization();
-        Serialization(const Serialization &other);
-        Serialization &operator=(const Serialization &other);
-        ~Serialization();
-        static uintptr_t serialize(Data* ptr);
-        static Data* deserialize(uintptr_t raw);
+private:
+    Serialization();
+    Serialization(const Serialization &other);
+    Serialization &operator=(const Serialization &other);
+    ~Serialization();
+public:
+    static uintptr_t serialize(Data* ptr);
+    static Data* deserialize(uintptr_t raw);
 };

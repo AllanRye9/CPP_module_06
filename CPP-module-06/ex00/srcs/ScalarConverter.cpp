@@ -51,7 +51,7 @@ void ScalarConverter::convert(const std::string input)
         int k;
         if (input.length() == 1 && !isdigit(input[0]))
             k = static_cast<int>(input[0]);
-        else if (!isdigit(input[i]))
+        else if (!isdigit(input[i]) || input.length() > 10)
             throw std::exception();
         else
             k = static_cast<int>(std::atoi(input.c_str()));

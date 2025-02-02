@@ -3,9 +3,9 @@
 int main()
 {
     Data data;
-    data.s1 = "Hello";
+    data.s1 = "From";
     data.n = 42;
-    data.s2 = "World";
+    data.s2 = "to World";
 
     uintptr_t raw = Serialization::serialize(&data);
     Data *ptr = Serialization::deserialize(raw);
