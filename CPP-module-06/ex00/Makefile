@@ -3,7 +3,7 @@ NAME = ex00
 SRC = 	srcs/ScalarConverter.cpp \
 		srcs/main.cpp
 
-HEADER = includes/
+HEADER = include/
 
 OBJS = $(SRC:%.cpp=%.o)
 

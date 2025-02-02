@@ -46,7 +46,7 @@ void ScalarConverter::convert(const std::string input)
         std::cerr << " Impossible " << std::endl;
     }
 
-    std::cout << "int: ";
+    std::cout << "int:  ";
     try{
         int k;
         if (input.length() == 1 && !isdigit(input[0]))
@@ -62,7 +62,7 @@ void ScalarConverter::convert(const std::string input)
         std::cerr << " Impossible " << std::endl;
     }
 
-    std::cout << "float";
+    std::cout << "float:    ";
     try
     {
         float f;
@@ -86,7 +86,7 @@ void ScalarConverter::convert(const std::string input)
         std::cerr << "Impossible" << std::endl;
     }
     
-    std::cout << "double";
+    std::cout << "double:   ";
     try
     {
         double d;
